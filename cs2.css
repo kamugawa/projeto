@@ -1,0 +1,582 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+ background: transparent;
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-width: 100%;
+    height: 100px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+.logo img:hover{
+    transform: translateY(-5px); 
+   
+
+}
+@media screen and (max-width: 490px) {
+    .logo img {
+        display: none;
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0; /* Removendo o preenchimento lateral */
+}
+
+.menu li {
+    margin-right: 15px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+.menu li:hover{
+    transform: translateY(-5px); 
+
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover {
+    color: red;
+}
+@media screen and (max-width: 540px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+      
+    }
+}
+@media screen and (max-width: 320px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-left: 5px;
+        
+    }
+}@media screen and (max-width: 295px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-left: 5px;
+       
+    }
+}
+@media screen and (max-width: 290px) {
+  .menu {
+      justify-content: center; /* Centralizar os itens */
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      margin-left: 5px;
+      font-size: 12px;
+  }
+}
+@media screen and (max-width: 230px) {
+  .menu {
+      justify-content: center; /* Centralizar os itens */
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      margin-left: 5px;
+      font-size: 8px;
+  }
+}
+
+/* Seção de herói */
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background-color: white;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+
+/* Seção de recursos */
+.features {
+    padding: 0px 0;
+    text-align: left;
+   
+    
+background-color: #201f1ffa;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+   
+  
+}
+
+.feature {
+    margin-bottom: 0px;
+width: 100%; /* Definir a largura de cada recurso para ocupar metade da largura da seção com um espaço entre eles */
+    background-color: rgb(255, 255, 255); /* Cor de fundo preta com opacidade */
+    padding:50px; /* Espaçamento interno */
+    margin-bottom: 0px; /* Espaçamento inferior */
+    box-sizing: border-box; /* Incluir padding e borda no cálculo da largura */
+  
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+    margin-left: 800px;
+    margin-right: 40px;
+   padding-bottom: 16px;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-left: 800px;
+    margin-right: 40px;
+   padding-bottom: 30px;
+  
+}
+.feature img{
+ max-width: 1500px;
+ min-width: 30px;
+ height: auto;
+    margin-top: -350px;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    object-fit: cover;
+    margin-left: 30px;
+
+}
+@media screen and (max-width: 1400px) {
+    .feature img {
+       display: none;
+      
+    
+    }
+  }
+
+ 
+ 
+  @media screen and (max-width: 1400px) {
+    .feature p{
+   text-align: left;
+      margin: 0;
+      
+    
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .feature h3{
+   text-align: left;
+      margin: 0;
+      
+    
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .feature p{
+   text-align: center;
+      margin: 0;
+      
+    
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .feature h3{
+   text-align: center;
+      margin: 0;
+      
+    
+    }
+  }
+ 
+
+@media screen and (max-width: 768px) {
+    .features {
+       width: auto;
+      
+    
+    }
+  }
+ 
+ 
+  
+  @media screen and (max-width: 500px) {
+    .feature p  {
+       font-size: 25px;
+      
+        /* Em telas menores, ocupar toda a largura disponível */
+    }
+  }
+  
+/* Rodapé */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.footer-social-icons a:hover {
+  color: #ddd;
+}
+@media screen and (max-width: 765px) {
+  footer {
+   display: none;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+  }
+}
+
+.footer2 {
+text-align: center;
+margin: 0;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+@media screen and (max-width: 30000px) {
+  .footer2 {
+   display: none;
+  }
+}
+@media screen and (max-width: 764px) {
+  .footer2 {
+   display: block;
+  }
+}
+
+.accessibility-tab {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  background-color: #007BFF;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accessibility-tab:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.accessibility-tab i {
+  font-size: 20px;
+  margin: 8px 0;
+  transition: transform 0.2s ease;
+}
+
+.accessibility-tab i:hover {
+  transform: scale(1.2);
+}
+
+.accessibility-tab span {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.accessibility-tab .percentage {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 500px) {
+.accessibility-tab {
+ display: none;
+}
+}
+
+/*--------------------------------------------------------------- SOBRE
+  /* Seção de recursos */
+.features2 {
+  padding: 0px 0;
+  text-align: center;
+ 
+  
+background-color: #201f1ffa;
+}
+
+.features2 h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+ 
+
+}
+
+.feature2 {
+  margin-bottom: 0px;
+width: 100%; /* Definir a largura de cada recurso para ocupar metade da largura da seção com um espaço entre eles */
+  background-color: rgb(255, 255, 255); /* Cor de fundo preta com opacidade */
+  padding:25px; /* Espaçamento interno */
+  margin-bottom: 0px; /* Espaçamento inferior */
+  box-sizing: border-box; /* Incluir padding e borda no cálculo da largura */
+
+}
+
+.feature2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+
+
+ padding-bottom: 16px;
+}
+
+.feature2 p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 8);
+  background-color: black;
+
+ padding-bottom: 30px;
+ border-radius: 5px;
+
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+  .feature2 p  {
+     font-size: 15px;
+    
+      /* Em telas menores, ocupar toda a largura disponível */
+  }
+}
+
+
+@media screen and (max-width: 250px) {
+  .feature2 img {
+     
+    
+    zoom: 50%;
+  
+    height: auto;
+      /* Em telas menores, ocupar toda a largura disponível */
+  }
+}
+
+  
+/*--------------------------------------------------------------- DÚVIDAS
+  */ 
+  .faq {
+    background-color: white;  /* background: url(https://th.bing.com/th/id/OIP.KkclKhbEI5CtMlf-so0kOgAAAA?rs=1&pid=ImgDetMain);/*
+     /* Ajuste o valor do desfoque conforme necessário */
+     padding: 40px 0; /* Redução do espaço ao redor da seção */
+     text-align: center;
+     
+    
+ }
+ 
+ 
+ .faq-item {
+     margin-bottom: 30px; /* Redução do espaço entre os itens */
+    
+ }
+ 
+ .faq-question {
+     cursor: pointer;
+     padding: 20px;
+     border-radius: 16px;
+     background-color:#000000;
+     color:white;
+     width: 600px;
+     align-items: center;
+      margin: 0 auto;
+    
+ }
+ 
+ .faq-answer {
+    
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.5s ease;
+     color: #000;
+ }
+.imgfaqe{
+
+  margin-left: 1000px;
+   margin-top: -500px; 
+   display: inline-block;
+  
+}
+
+@media screen and (max-width: 700px) {
+  .faq  {
+     
+ height: auto;
+zoom: 50%;
+font-size: 28px;
+  
+  }
+}
+@media screen and (max-width: 400px) {
+  .faq  {
+     
+ height: auto;
+zoom: 40%;
+font-size: 28px;
+  
+  }
+}
+@media screen and (max-width: 295px) {
+  .faq  {
+     
+ height: auto;
+zoom:28%;
+font-size: 38px;
+  
+  }
+}
+
+ @media screen and (max-width: 1060px) {
+  .imgfaqe  {
+     
+    display: none;
+  
+  }
+}
+
+
+/*-------------------------------------------------------------CONTATO
+  */ 
